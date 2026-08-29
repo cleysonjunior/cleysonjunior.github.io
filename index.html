@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cleyson Júnior Studzinski — Coordenador de TI e desenvolvedor</title>
+<meta name="description" content="Coordenador de TI e desenvolvedor full-stack em Chapecó/SC. Construo e opero SaaS em produção: gestão de frota com GPS e chatbots de IA no WhatsApp.">
+<link rel="canonical" href="https://cleyson.me/">
+<meta property="og:title" content="Cleyson Júnior Studzinski">
+<meta property="og:description" content="Coordenador de TI e desenvolvedor full-stack. Construo e opero SaaS em produção.">
+<meta property="og:url" content="https://cleyson.me/">
+<meta property="og:type" content="profile">
+<style>
+  :root{
+    --bg:#fbfbfa; --fg:#1a1a18; --muted:#5f5f58; --line:#e4e4de;
+    --card:#ffffff; --accent:#1f5f4f; --accent-soft:#eef4f2;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#131413; --fg:#eceae4; --muted:#a0a099; --line:#2b2c2a;
+           --card:#1a1b1a; --accent:#7fc9b2; --accent-soft:#1c2724; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);
+       font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+       -webkit-font-smoothing:antialiased}
+  .wrap{max-width:760px;margin:0 auto;padding:56px 22px 72px}
+  h1{font-size:clamp(1.7rem,5vw,2.3rem);line-height:1.15;margin:0 0 6px;letter-spacing:-.02em}
+  h2{font-size:.78rem;text-transform:uppercase;letter-spacing:.11em;color:var(--muted);
+     margin:52px 0 18px;font-weight:650}
+  h3{font-size:1rem;margin:0 0 4px;font-weight:650}
+  p{margin:0 0 14px}
+  a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
+  a:hover{border-bottom-color:currentColor}
+  .lead{font-size:1.06rem;color:var(--fg);margin-bottom:10px}
+  .meta{color:var(--muted);font-size:.94rem;margin:0 0 18px}
+  .tag{display:inline-block;background:var(--accent-soft);color:var(--accent);
+       border-radius:999px;padding:3px 11px;font-size:.8rem;font-weight:600;
+       margin:0 0 20px}
+  .links{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.94rem;padding:0;margin:0 0 6px;list-style:none}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;
+        padding:18px 20px;margin-bottom:12px}
+  .card p{margin:0;color:var(--muted);font-size:.95rem}
+  .card .badge{display:inline-block;font-size:.76rem;font-weight:650;color:var(--accent);
+        background:var(--accent-soft);border-radius:6px;padding:2px 8px;margin-left:6px;vertical-align:2px}
+  ul.plain{margin:0;padding-left:1.15em}
+  ul.plain li{margin-bottom:11px}
+  .job{border-left:2px solid var(--line);padding:0 0 4px 18px;margin-bottom:24px}
+  .job .when{color:var(--muted);font-size:.87rem;margin:0 0 6px}
+  .job p{font-size:.95rem;color:var(--muted);margin:0}
+  .stack{display:flex;flex-wrap:wrap;gap:7px;padding:0;margin:0;list-style:none}
+  .stack li{border:1px solid var(--line);border-radius:7px;padding:3px 10px;
+            font-size:.85rem;color:var(--muted)}
+  footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);
+         color:var(--muted);font-size:.9rem}
+  strong{font-weight:650;color:var(--fg)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Cleyson Júnior Studzinski</h1>
+  <p class="lead"><strong>Coordenador de TI e desenvolvedor full-stack.</strong></p>
+  <p class="meta">Chapecó/SC · aberto a vagas <strong>100% remotas</strong> ou presenciais na região.</p>
+
+  <p>Sete anos de TI, cinco deles na mesma empresa com progressão de analista a coordenador.
+  Desde 2021, em paralelo, construo produtos próprios na
+  <a href="https://www.cjsinfotech.com.br">CJS Infotech</a>: sistemas que rodam em produção,
+  com cliente pagando e telefone tocando quando quebra.</p>
+
+  <ul class="links">
+    <li><a href="https://github.com/cleysonjunior">GitHub</a></li>
+    <li><a href="https://www.linkedin.com/in/cleysonjunior/">LinkedIn</a></li>
+    <li><a href="https://www.cjsinfotech.com.br">cjsinfotech.com.br</a></li>
+    <li><a href="mailto:contato@cjsinfotech.com.br">contato@cjsinfotech.com.br</a></li>
+  </ul>
+
+  <h2>O que estou construindo</h2>
+
+  <div class="card">
+    <h3>CJS Track <span class="badge">em produção</span></h3>
+    <p>Gestão de frota com rastreamento GPS. Mostra o que rastreador comum não mostra:
+    quanto sobrou de cada viagem, já descontando combustível, pedágio e manutenção.
+    PHP 8.4 + React, integrado ao Traccar. Assinatura recorrente ativa, com cadastro
+    self-service, cobrança e liberação automáticas.</p>
+  </div>
+
+  <div class="card">
+    <h3>Chatbot de IA no WhatsApp</h3>
+    <p>Atendimento que entende texto, áudio e foto, cota preço do catálogo real do
+    distribuidor e passa para humano na hora certa. Fila de provedores de LLM com queda
+    automática — e nunca inventa valor: o preço é calculado no servidor, a IA só conversa.</p>
+  </div>
+
+  <div class="card">
+    <h3>Conecta Saúde</h3>
+    <p>Sistema para clínicas: captação, pré-agendamento e clube de fidelidade por
+    assinatura. No ar em Campo Grande/MS.</p>
+  </div>
+
+  <p style="color:var(--muted);font-size:.95rem">Tudo em servidor próprio que eu administro:
+  Linux, MariaDB, Docker, Cloudflare, backup off-site testado.</p>
+
+  <h2>Como eu trabalho</h2>
+  <ul class="plain">
+    <li><strong>700+ testes automatizados</strong>, rodados antes e depois de cada mudança.
+    Boa parte existe para travar a lição de um incidente — <em>“modelo descontinuado não volta
+    para a fila de fallback”</em>, <em>“áudio nunca vai para um modelo que não recebe áudio”</em>.</li>
+    <li><strong>Backup off-site com restauração provada</strong>, não presumida: cópia diária
+    para object storage e um teste de restauração todo mês.</li>
+    <li><strong>Vigia de 19 rotinas automáticas</strong>: cada uma bate ponto só quando termina
+    bem, e o que não bateu vira alerta no WhatsApp. Mais um vigia separado só para erro fatal —
+    o heartbeat pega a queda permanente, não a intermitente.</li>
+    <li><strong>Observabilidade e segurança</strong>: rastreamento de erro no servidor e no
+    front, TLS e WAF na frente, fail2ban, auditoria de permissões e de credenciais.</li>
+    <li><strong>Medir antes de otimizar.</strong> A análise de IA do painel levava 49s porque
+    tentava três provedores mortos antes do que funcionava; reordenada com base na medição,
+    passou a 3s.</li>
+    <li><strong>Toda decisão não-óbvia fica escrita no código</strong>, junto com o incidente
+    que a motivou. Quem chegar depois — inclusive eu, seis meses depois — não precisa
+    redescobrir do zero.</li>
+  </ul>
+
+  <h2>Experiência</h2>
+
+  <div class="job">
+    <h3>Coordenador de TI · ACB Revenda Ambev</h3>
+    <p class="when">mar/2026 – jul/2026</p>
+    <p>TI de 5 unidades em SC e PR, equipe de 3 técnicos, 500+ usuários e 500+ chamados/mês
+    sob SLA. Proxmox com backup diário de 10+ VMs. Deploy de máquina caiu de <strong>2h para
+    30 min</strong> com MDT/Windows ADK. Servidor local de IA rodando LLMs open-source para
+    manter dado confidencial dentro da rede. Renegociação de telecom com <strong>~15% de
+    redução</strong> no custo mensal.</p>
+  </div>
+
+  <div class="job">
+    <h3>Desenvolvedor — RPA e Dados · ACB Revenda Ambev</h3>
+    <p class="when">jan/2025 – mar/2026</p>
+    <p>Robô em Python/Selenium/PyAutoGUI para sistema legado sem HTML legível (IE Mode):
+    lançamento de <strong>2 minutos para 12 segundos</strong>, em ~1.000 transações/dia —
+    8h de trabalho manual viraram 2h autônomas. Data Lake, Power Automate, 20+ relatórios
+    em Power BI.</p>
+  </div>
+
+  <div class="job">
+    <h3>Analista de TI · ACB Revenda Ambev</h3>
+    <p class="when">jul/2021 – jan/2025</p>
+    <p>Suporte N1/N2/N3 a 500+ usuários locais e remotos. Rede corporativa: switches
+    gerenciáveis UniFi, monitoramento de links, regras de firewall. Acessos e GPOs no
+    Active Directory, projetos de expansão de unidades.</p>
+  </div>
+
+  <div class="job">
+    <h3>Assistente de TI · Cooperativa Rede Sul</h3>
+    <p class="when">nov/2020 – mai/2021</p>
+    <p>Service Desk N1, manutenção preventiva e corretiva do parque, reestruturação do
+    cabeamento estruturado da LAN.</p>
+  </div>
+
+  <div class="job">
+    <h3>Assistente de Suporte de TI · Ases Express</h3>
+    <p class="when">mar/2019 – ago/2020</p>
+    <p>Suporte a 100+ agências parceiras credenciadas. Monitoramento e processamento
+    automatizado de arquivos EDI entre matriz e agências.</p>
+  </div>
+
+  <h2>Stack</h2>
+  <ul class="stack">
+    <li>PHP</li><li>Python</li><li>JavaScript</li><li>React</li><li>Next.js</li>
+    <li>Laravel</li><li>MariaDB/MySQL</li><li>Linux</li><li>Docker</li><li>Proxmox</li>
+    <li>Active Directory</li><li>Power BI</li><li>Selenium</li><li>APIs REST</li>
+    <li>LLMs em produção</li>
+  </ul>
+
+  <h2>Formação</h2>
+  <p>Engenharia de Computação (cursando, 2023–2027) · Técnico em Manutenção de Computadores ·
+  Certificações em IA aplicada, cibersegurança, tuning de banco e cloud.</p>
+
+  <footer>
+    Chapecó/SC · <a href="mailto:contato@cjsinfotech.com.br">contato@cjsinfotech.com.br</a> ·
+    <a href="https://github.com/cleysonjunior">github.com/cleysonjunior</a>
+  </footer>
+
+</div>
+</body>
+</html>
