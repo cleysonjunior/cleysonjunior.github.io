@@ -67,10 +67,13 @@ section:first-of-type{border-top:0}
 .btn.primary:hover{border-color:var(--accent)}
 
 .hero-g{display:grid;gap:34px;align-items:start}
-@media(min-width:820px){.hero-g{grid-template-columns:1fr 210px;gap:44px}}
-.retrato{width:170px;height:170px;border-radius:16px;object-fit:cover;
-  border:1px solid var(--line);box-shadow:var(--shadow);justify-self:start}
-@media(min-width:820px){.retrato{width:210px;height:210px;justify-self:end}}
+@media(min-width:820px){.hero-g{grid-template-columns:1fr 260px;gap:44px}}
+/* object-position um pouco acima do centro: mantém o rosto no terço superior
+   do quadro em vez de deixá-lo colado na borda de cima. */
+.retrato{width:200px;height:200px;border-radius:16px;object-fit:cover;
+  object-position:50% 38%;border:1px solid var(--line);
+  box-shadow:var(--shadow);justify-self:start}
+@media(min-width:820px){.retrato{width:260px;height:260px;justify-self:end}}
 
 /* ── números ── */
 .nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:22px}
@@ -149,7 +152,7 @@ footer{border-top:1px solid var(--line);padding:30px 0 50px;
       <a class="btn" href="https://www.cjsinfotech.com.br" target="_blank" rel="noopener">CJS Infotech ↗</a>
     </div>
     </div>
-    <img class="retrato" src="foto.jpg" width="440" height="440"
+    <img class="retrato" src="foto.jpg" width="520" height="520"
          alt="Cleyson Júnior Studzinski" loading="eager">
    </div>
   </section>
