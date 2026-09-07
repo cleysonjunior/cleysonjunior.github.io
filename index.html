@@ -3,181 +3,331 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cleyson Júnior Studzinski — Coordenador de TI e desenvolvedor</title>
-<meta name="description" content="Coordenador de TI e desenvolvedor full-stack em Chapecó/SC. Construo e opero SaaS em produção: gestão de frota com GPS e chatbots de IA no WhatsApp.">
+<meta name="color-scheme" content="light dark">
+<title>Cleyson Júnior Studzinski — Coordenador de TI</title>
+<meta name="description" content="Coordenador de TI com 7 anos de experiência em infraestrutura, automação e dados. Chapecó/SC — disponível para oportunidades remotas ou na região.">
 <link rel="canonical" href="https://cleyson.me/">
-<meta property="og:title" content="Cleyson Júnior Studzinski">
-<meta property="og:description" content="Coordenador de TI e desenvolvedor full-stack. Construo e opero SaaS em produção.">
-<meta property="og:url" content="https://cleyson.me/">
 <meta property="og:type" content="profile">
+<meta property="og:title" content="Cleyson Júnior Studzinski — Coordenador de TI">
+<meta property="og:description" content="Infraestrutura, automação (RPA) e dados. Lançamento de 2 minutos para 12 segundos. Deploy de estações de 2 horas para 30 minutos.">
+<meta property="og:url" content="https://cleyson.me/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Sora:wght@600;700&display=swap">
 <style>
-  :root{
-    --bg:#fbfbfa; --fg:#1a1a18; --muted:#5f5f58; --line:#e4e4de;
-    --card:#ffffff; --accent:#1f5f4f; --accent-soft:#eef4f2;
-  }
-  @media (prefers-color-scheme: dark){
-    :root{ --bg:#131413; --fg:#eceae4; --muted:#a0a099; --line:#2b2c2a;
-           --card:#1a1b1a; --accent:#7fc9b2; --accent-soft:#1c2724; }
-  }
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--fg);
-       font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
-       -webkit-font-smoothing:antialiased}
-  .wrap{max-width:760px;margin:0 auto;padding:56px 22px 72px}
-  h1{font-size:clamp(1.7rem,5vw,2.3rem);line-height:1.15;margin:0 0 6px;letter-spacing:-.02em}
-  h2{font-size:.78rem;text-transform:uppercase;letter-spacing:.11em;color:var(--muted);
-     margin:52px 0 18px;font-weight:650}
-  h3{font-size:1rem;margin:0 0 4px;font-weight:650}
-  p{margin:0 0 14px}
-  a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
-  a:hover{border-bottom-color:currentColor}
-  .lead{font-size:1.06rem;color:var(--fg);margin-bottom:10px}
-  .meta{color:var(--muted);font-size:.94rem;margin:0 0 18px}
-  .tag{display:inline-block;background:var(--accent-soft);color:var(--accent);
-       border-radius:999px;padding:3px 11px;font-size:.8rem;font-weight:600;
-       margin:0 0 20px}
-  .links{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.94rem;padding:0;margin:0 0 6px;list-style:none}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;
-        padding:18px 20px;margin-bottom:12px}
-  .card p{margin:0;color:var(--muted);font-size:.95rem}
-  .card .badge{display:inline-block;font-size:.76rem;font-weight:650;color:var(--accent);
-        background:var(--accent-soft);border-radius:6px;padding:2px 8px;margin-left:6px;vertical-align:2px}
-  ul.plain{margin:0;padding-left:1.15em}
-  ul.plain li{margin-bottom:11px}
-  .job{border-left:2px solid var(--line);padding:0 0 4px 18px;margin-bottom:24px}
-  .job .when{color:var(--muted);font-size:.87rem;margin:0 0 6px}
-  .job p{font-size:.95rem;color:var(--muted);margin:0}
-  .stack{display:flex;flex-wrap:wrap;gap:7px;padding:0;margin:0;list-style:none}
-  .stack li{border:1px solid var(--line);border-radius:7px;padding:3px 10px;
-            font-size:.85rem;color:var(--muted)}
-  footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);
-         color:var(--muted);font-size:.9rem}
-  strong{font-weight:650;color:var(--fg)}
+:root{
+  --bg:#FBFAF8; --surface:#FFFFFF; --ink:#14171C; --muted:#5E646E;
+  --line:#E6E3DC; --accent:#0E6E5B; --accent-soft:#E4F0EC; --shadow:0 1px 2px rgba(20,23,28,.04),0 14px 34px -18px rgba(20,23,28,.18);
+  --disp:"Sora",system-ui,sans-serif; --body:"IBM Plex Sans",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0F1114; --surface:#161A1F; --ink:#ECEFF2; --muted:#98A0AA;
+  --line:#242A31; --accent:#43C4A2; --accent-soft:#12312A; --shadow:0 1px 2px rgba(0,0,0,.4),0 18px 40px -20px rgba(0,0,0,.7);
+}}
+:root[data-theme="dark"]{
+  --bg:#0F1114; --surface:#161A1F; --ink:#ECEFF2; --muted:#98A0AA;
+  --line:#242A31; --accent:#43C4A2; --accent-soft:#12312A; --shadow:0 1px 2px rgba(0,0,0,.4),0 18px 40px -20px rgba(0,0,0,.7);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);
+  font-size:16.5px;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--disp);margin:0;text-wrap:balance;letter-spacing:-.02em}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:2.5px solid var(--accent);outline-offset:3px;border-radius:4px}
+img{max-width:100%}
+
+.wrap{max-width:860px;margin:0 auto;padding:0 24px}
+section{padding:clamp(40px,6vw,66px) 0;border-top:1px solid var(--line)}
+section:first-of-type{border-top:0}
+
+.lbl{font-family:var(--mono);font-size:.72rem;text-transform:uppercase;
+  letter-spacing:.14em;color:var(--accent);font-weight:600;margin-bottom:16px}
+
+/* ── topo ── */
+.hero{padding-top:clamp(48px,8vw,86px)}
+.avail{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);
+  font-size:.76rem;background:var(--accent-soft);color:var(--accent);
+  padding:7px 13px;border-radius:999px;font-weight:600;margin-bottom:24px}
+.avail .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);
+  box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 25%,transparent)}
+.hero h1{font-size:clamp(2.3rem,6vw,3.5rem);line-height:1.05;font-weight:700}
+.hero .role{font-family:var(--mono);color:var(--muted);font-size:1rem;margin-top:14px}
+.hero .pitch{margin-top:22px;font-size:1.1rem;max-width:60ch;color:var(--muted)}
+.hero .pitch strong{color:var(--ink);font-weight:600}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;
+  font-family:var(--mono);font-size:.86rem;font-weight:500;
+  padding:11px 17px;border-radius:10px;border:1px solid var(--line);
+  background:var(--surface);transition:transform .15s,border-color .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:var(--shadow)}
+.btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn.primary:hover{border-color:var(--accent)}
+
+/* ── números ── */
+.nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:22px}
+.num b{font-family:var(--disp);font-weight:700;font-size:1.9rem;display:block;line-height:1.1}
+.num span{font-family:var(--mono);font-size:.74rem;color:var(--muted);
+  text-transform:uppercase;letter-spacing:.07em}
+
+/* ── resultados medidos (o motivo do site) ── */
+.res{display:grid;gap:14px}
+.r{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:start;
+  background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.r .delta{font-family:var(--mono);font-weight:600;font-size:.95rem;color:var(--accent);
+  white-space:nowrap;background:var(--accent-soft);padding:7px 11px;border-radius:8px}
+.r p{font-size:.95rem;color:var(--muted)}
+.r p b{color:var(--ink);font-weight:600}
+@media(max-width:600px){.r{grid-template-columns:1fr}}
+
+/* ── experiência ── */
+.job{display:grid;grid-template-columns:132px 1fr;gap:24px;padding:22px 0;border-top:1px solid var(--line)}
+.job:first-of-type{border-top:0;padding-top:0}
+.job .when{font-family:var(--mono);font-size:.78rem;color:var(--muted);padding-top:5px}
+.job h3{font-size:1.12rem;font-weight:600}
+.job .org{font-family:var(--mono);font-size:.8rem;color:var(--accent);margin:4px 0 10px}
+.job ul{margin:0;padding-left:18px;color:var(--muted);font-size:.94rem}
+.job li{margin-bottom:6px}
+.job li b{color:var(--ink);font-weight:600}
+@media(max-width:640px){.job{grid-template-columns:1fr;gap:8px}.job .when{padding-top:0}}
+
+/* ── produtos ── */
+.prods{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.prod{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px}
+.prod h3{font-size:1.05rem;font-weight:600;margin-bottom:6px}
+.prod p{font-size:.9rem;color:var(--muted)}
+.prod .tag{font-family:var(--mono);font-size:.68rem;color:var(--accent);
+  text-transform:uppercase;letter-spacing:.08em;display:block;margin-bottom:9px}
+
+/* ── stack ── */
+.grp{margin-bottom:20px}
+.grp h3{font-family:var(--mono);font-size:.76rem;text-transform:uppercase;
+  letter-spacing:.1em;color:var(--muted);font-weight:500;margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chip{font-family:var(--mono);font-size:.78rem;border:1px solid var(--line);
+  background:var(--surface);padding:5px 10px;border-radius:7px}
+
+/* ── formação ── */
+.edu{display:grid;grid-template-columns:132px 1fr;gap:24px;padding:12px 0}
+.edu .when{font-family:var(--mono);font-size:.78rem;color:var(--muted)}
+.edu b{font-weight:600}
+.edu span{color:var(--muted);font-size:.92rem;display:block}
+@media(max-width:640px){.edu{grid-template-columns:1fr;gap:4px}}
+.certs{font-size:.9rem;color:var(--muted);line-height:2}
+
+footer{border-top:1px solid var(--line);padding:30px 0 50px;
+  font-family:var(--mono);font-size:.78rem;color:var(--muted);
+  display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 </style>
 </head>
 <body>
+
 <div class="wrap">
 
-  <h1>Cleyson Júnior Studzinski</h1>
-  <p class="lead"><strong>Coordenador de TI e desenvolvedor full-stack.</strong></p>
-  <p class="meta">Chapecó/SC · aberto a vagas <strong>100% remotas</strong> ou presenciais na região.</p>
+  <section class="hero">
+    <span class="avail"><span class="dot"></span>Disponível para novas oportunidades</span>
+    <h1>Cleyson Júnior Studzinski</h1>
+    <p class="role">Coordenador de TI · Infraestrutura, automação e dados · Chapecó/SC — remoto ou região</p>
+    <p class="pitch">Sete anos de TI, cinco deles na mesma empresa subindo de analista a coordenador.
+      Respondi pela infraestrutura de <strong>5 unidades em SC e PR</strong>, com equipe própria e
+      mais de 500 usuários sob SLA. O que me define não é a lista de ferramentas —
+      é <strong>tirar tempo e custo de processos que ninguém mais estava medindo</strong>.</p>
+    <div class="links">
+      <a class="btn primary" href="https://www.linkedin.com/in/cleysonjunior/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn" href="https://github.com/cleysonjunior" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="btn" href="mailto:contato@cjsinfotech.com.br">contato@cjsinfotech.com.br</a>
+      <a class="btn" href="https://www.cjsinfotech.com.br" target="_blank" rel="noopener">CJS Infotech ↗</a>
+    </div>
+  </section>
 
-  <p>Sete anos de TI, cinco deles na mesma empresa com progressão de analista a coordenador.
-  Desde 2021, em paralelo, construo produtos próprios na
-  <a href="https://www.cjsinfotech.com.br">CJS Infotech</a>: sistemas que rodam em produção,
-  com cliente pagando e telefone tocando quando quebra.</p>
+  <section>
+    <div class="lbl">Em números</div>
+    <div class="nums">
+      <div class="num"><b>7 anos</b><span>de experiência em TI</span></div>
+      <div class="num"><b>5 unidades</b><span>SC e PR sob minha gestão</span></div>
+      <div class="num"><b>500+</b><span>usuários atendidos sob SLA</span></div>
+      <div class="num"><b>500+</b><span>chamados/mês controlados</span></div>
+    </div>
+  </section>
 
-  <ul class="links">
-    <li><a href="https://github.com/cleysonjunior">GitHub</a></li>
-    <li><a href="https://www.linkedin.com/in/cleysonjunior/">LinkedIn</a></li>
-    <li><a href="https://www.cjsinfotech.com.br">cjsinfotech.com.br</a></li>
-    <li><a href="mailto:contato@cjsinfotech.com.br">contato@cjsinfotech.com.br</a></li>
-  </ul>
+  <section>
+    <div class="lbl">Resultados medidos</div>
+    <div class="res">
+      <div class="r">
+        <span class="delta">2 min → 12 s</span>
+        <p><b>Robô RPA para lançamento de recebimentos Pix</b> em sistema legado sem HTML legível
+          (Edge/IE Mode), com tratamento de feriados e dias úteis. Cerca de
+          <b>1.000 transações por dia</b> — a rotina saiu de 8 horas manuais para 2 horas
+          totalmente autônomas.</p>
+      </div>
+      <div class="r">
+        <span class="delta">2 h → 30 min</span>
+        <p><b>Deploy padronizado de estações</b> com MDT e Windows ADK. Instalar uma máquina
+          deixou de ser um dia de trabalho para virar rotina.</p>
+      </div>
+      <div class="r">
+        <span class="delta">−15% ao mês</span>
+        <p><b>Renegociação dos contratos de telecom</b> das unidades, sem perda de serviço —
+          custo recorrente é onde a economia se acumula.</p>
+      </div>
+      <div class="r">
+        <span class="delta">LGPD</span>
+        <p><b>Servidor local de IA</b> (Mac Mini M4 Pro) rodando LLMs open-source, para que
+          dado confidencial fosse processado <b>dentro da rede</b> em vez de sair para uma
+          API de terceiro.</p>
+      </div>
+    </div>
+  </section>
 
-  <h2>O que estou construindo</h2>
+  <section>
+    <div class="lbl">Experiência</div>
 
-  <div class="card">
-    <h3>CJS Track <span class="badge">em produção</span></h3>
-    <p>Gestão de frota com rastreamento GPS. Mostra o que rastreador comum não mostra:
-    quanto sobrou de cada viagem, já descontando combustível, pedágio e manutenção.
-    PHP 8.4 + React, integrado ao Traccar. Assinatura recorrente ativa, com cadastro
-    self-service, cobrança e liberação automáticas.</p>
-  </div>
+    <div class="job">
+      <div class="when">mar/2026 – jul/2026</div>
+      <div>
+        <h3>Coordenador de TI</h3>
+        <div class="org">ACB Revenda Ambev · Chapecó, SC</div>
+        <ul>
+          <li>Liderança da TI de <b>5 unidades em SC e PR</b>, com equipe direta de 3 técnicos, respondendo pela continuidade das operações e pelo SLA de mais de 500 usuários.</li>
+          <li>Servidor físico <b>Proxmox</b> dedicado a backup corporativo, com rotinas diárias de <b>10+ VMs</b> em Linux, Windows, VMware e Hyper-V.</li>
+          <li>Active Directory e GPO, Microsoft 365, redes UniFi com VLANs, firewalls e OpenVPN; Kaspersky e MDM Pulsus na ponta.</li>
+          <li>Padronização do deploy de estações com MDT/Windows ADK e gestão dos contratos de telecom.</li>
+        </ul>
+      </div>
+    </div>
 
-  <div class="card">
-    <h3>Chatbot de IA no WhatsApp</h3>
-    <p>Atendimento que entende texto, áudio e foto, cota preço do catálogo real do
-    distribuidor e passa para humano na hora certa. Fila de provedores de LLM com queda
-    automática — e nunca inventa valor: o preço é calculado no servidor, a IA só conversa.</p>
-  </div>
+    <div class="job">
+      <div class="when">jan/2025 – mar/2026</div>
+      <div>
+        <h3>Desenvolvedor — RPA e Dados</h3>
+        <div class="org">ACB Revenda Ambev · Chapecó, SC</div>
+        <ul>
+          <li>Robô RPA em <b>Python, Selenium e PyAutoGUI</b> para sistema legado sem HTML legível, com tratamento de feriados e dias úteis.</li>
+          <li>Resultado: <b>2 minutos por lançamento para 12 segundos</b>, em cerca de 1.000 transações/dia.</li>
+          <li>Estruturação de dados e indicadores para decisão — o número tinha de chegar pronto, não em planilha para alguém montar.</li>
+        </ul>
+      </div>
+    </div>
 
-  <div class="card">
-    <h3>Conecta Saúde</h3>
-    <p>Sistema para clínicas: captação, pré-agendamento e clube de fidelidade por
-    assinatura. No ar em Campo Grande/MS.</p>
-  </div>
+    <div class="job">
+      <div class="when">jul/2021 – jan/2025</div>
+      <div>
+        <h3>Analista de TI</h3>
+        <div class="org">ACB Revenda Ambev · Chapecó, SC</div>
+        <ul>
+          <li>Suporte <b>N1, N2 e N3</b> a mais de 500 usuários locais e remotos, com média superior a 500 chamados/mês sob SLA.</li>
+          <li>Administração da rede corporativa: switches gerenciáveis UniFi, monitoramento de links e regras de firewall.</li>
+          <li>Gestão de acessos e GPOs no Active Directory; projetos de expansão de unidades e homologação de equipamentos.</li>
+        </ul>
+      </div>
+    </div>
 
-  <p style="color:var(--muted);font-size:.95rem">Tudo em servidor próprio que eu administro:
-  Linux, MariaDB, Docker, Cloudflare, backup off-site testado.</p>
+    <div class="job">
+      <div class="when">nov/2020 – mai/2021</div>
+      <div>
+        <h3>Assistente de TI</h3>
+        <div class="org">Cooperativa Rede Sul · Chapecó, SC</div>
+        <ul>
+          <li>Service Desk de primeiro nível e manutenção preventiva e corretiva de desktops, notebooks e periféricos.</li>
+          <li>Reestruturação do cabeamento estruturado, otimizando layout físico e performance da LAN.</li>
+        </ul>
+      </div>
+    </div>
 
-  <h2>Como eu trabalho</h2>
-  <ul class="plain">
-    <li><strong>700+ testes automatizados</strong>, rodados antes e depois de cada mudança.
-    Boa parte existe para travar a lição de um incidente — <em>“modelo descontinuado não volta
-    para a fila de fallback”</em>, <em>“áudio nunca vai para um modelo que não recebe áudio”</em>.</li>
-    <li><strong>Backup off-site com restauração provada</strong>, não presumida: cópia diária
-    para object storage e um teste de restauração todo mês.</li>
-    <li><strong>Vigia de 19 rotinas automáticas</strong>: cada uma bate ponto só quando termina
-    bem, e o que não bateu vira alerta no WhatsApp. Mais um vigia separado só para erro fatal —
-    o heartbeat pega a queda permanente, não a intermitente.</li>
-    <li><strong>Observabilidade e segurança</strong>: rastreamento de erro no servidor e no
-    front, TLS e WAF na frente, fail2ban, auditoria de permissões e de credenciais.</li>
-    <li><strong>Medir antes de otimizar.</strong> A análise de IA do painel levava 49s porque
-    tentava três provedores mortos antes do que funcionava; reordenada com base na medição,
-    passou a 3s.</li>
-    <li><strong>Toda decisão não-óbvia fica escrita no código</strong>, junto com o incidente
-    que a motivou. Quem chegar depois — inclusive eu, seis meses depois — não precisa
-    redescobrir do zero.</li>
-  </ul>
+    <div class="job">
+      <div class="when">mar/2019 – ago/2020</div>
+      <div>
+        <h3>Assistente de Suporte de TI</h3>
+        <div class="org">Ases Express · Chapecó, SC</div>
+        <ul>
+          <li>Suporte técnico a mais de <b>100 agências parceiras</b>, garantindo a estabilidade das operações sistêmicas.</li>
+          <li>Monitoramento e processamento automatizado de arquivos EDI entre matriz e agências.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-  <h2>Experiência</h2>
+  <section>
+    <div class="lbl">O que eu construo por fora</div>
+    <p style="color:var(--muted);max-width:60ch;margin-bottom:24px">
+      Desde 2021 mantenho a <strong style="color:var(--ink)">CJS Infotech</strong> em paralelo.
+      Não é portfólio de estudo: são sistemas em produção, com cliente pagando e SLA de verdade.
+    </p>
+    <div class="prods">
+      <div class="prod">
+        <span class="tag">SaaS em produção</span>
+        <h3>CJS Track</h3>
+        <p>Gestão de frota com rastreamento GPS e IA. Arquitetura, backend, front e cobrança — do banco ao boleto.</p>
+      </div>
+      <div class="prod">
+        <span class="tag">IA aplicada</span>
+        <h3>Chatbot de WhatsApp</h3>
+        <p>Atendimento com IA integrado por API e webhooks, com cotação de preço real e transbordo para humano.</p>
+      </div>
+      <div class="prod">
+        <span class="tag">Sistema de clínica</span>
+        <h3>Conecta Saúde</h3>
+        <p>Sistema de gestão para clínica, feito para um cliente real e transformado em produto.</p>
+      </div>
+    </div>
+  </section>
 
-  <div class="job">
-    <h3>Coordenador de TI · ACB Revenda Ambev</h3>
-    <p class="when">mar/2026 – jul/2026</p>
-    <p>TI de 5 unidades em SC e PR, equipe de 3 técnicos, 500+ usuários e 500+ chamados/mês
-    sob SLA. Proxmox com backup diário de 10+ VMs. Deploy de máquina caiu de <strong>2h para
-    30 min</strong> com MDT/Windows ADK. Servidor local de IA rodando LLMs open-source para
-    manter dado confidencial dentro da rede. Renegociação de telecom com <strong>~15% de
-    redução</strong> no custo mensal.</p>
-  </div>
+  <section>
+    <div class="lbl">Stack</div>
+    <div class="grp">
+      <h3>Infraestrutura e redes</h3>
+      <div class="chips">
+        <span class="chip">Proxmox VE</span><span class="chip">VMware</span><span class="chip">Hyper-V</span>
+        <span class="chip">Active Directory</span><span class="chip">GPO</span><span class="chip">Microsoft 365</span>
+        <span class="chip">MDT / Windows ADK</span><span class="chip">Linux</span><span class="chip">UniFi</span>
+        <span class="chip">VLANs</span><span class="chip">Firewalls</span><span class="chip">OpenVPN</span>
+        <span class="chip">Backups</span>
+      </div>
+    </div>
+    <div class="grp">
+      <h3>Automação e dados</h3>
+      <div class="chips">
+        <span class="chip">Python</span><span class="chip">Selenium</span><span class="chip">PyAutoGUI</span>
+        <span class="chip">Power Automate Desktop</span><span class="chip">Power BI</span><span class="chip">Metabase</span>
+        <span class="chip">SQL</span><span class="chip">PostgreSQL</span><span class="chip">Data Lakes</span>
+      </div>
+    </div>
+    <div class="grp">
+      <h3>Desenvolvimento e IA</h3>
+      <div class="chips">
+        <span class="chip">PHP</span><span class="chip">JavaScript</span><span class="chip">Node.js</span>
+        <span class="chip">APIs e webhooks</span><span class="chip">IA local (Ollama)</span>
+        <span class="chip">LLMs open-source</span><span class="chip">LGPD</span>
+      </div>
+    </div>
+    <div class="grp">
+      <h3>Segurança e gestão</h3>
+      <div class="chips">
+        <span class="chip">Kaspersky</span><span class="chip">MDM Pulsus</span><span class="chip">SLA</span>
+        <span class="chip">Suporte N1/N2/N3</span><span class="chip">Gestão de contratos</span>
+        <span class="chip">Liderança de equipe</span>
+      </div>
+    </div>
+  </section>
 
-  <div class="job">
-    <h3>Desenvolvedor — RPA e Dados · ACB Revenda Ambev</h3>
-    <p class="when">jan/2025 – mar/2026</p>
-    <p>Robô em Python/Selenium/PyAutoGUI para sistema legado sem HTML legível (IE Mode):
-    lançamento de <strong>2 minutos para 12 segundos</strong>, em ~1.000 transações/dia —
-    8h de trabalho manual viraram 2h autônomas. Data Lake, Power Automate, 20+ relatórios
-    em Power BI.</p>
-  </div>
-
-  <div class="job">
-    <h3>Analista de TI · ACB Revenda Ambev</h3>
-    <p class="when">jul/2021 – jan/2025</p>
-    <p>Suporte N1/N2/N3 a 500+ usuários locais e remotos. Rede corporativa: switches
-    gerenciáveis UniFi, monitoramento de links, regras de firewall. Acessos e GPOs no
-    Active Directory, projetos de expansão de unidades.</p>
-  </div>
-
-  <div class="job">
-    <h3>Assistente de TI · Cooperativa Rede Sul</h3>
-    <p class="when">nov/2020 – mai/2021</p>
-    <p>Service Desk N1, manutenção preventiva e corretiva do parque, reestruturação do
-    cabeamento estruturado da LAN.</p>
-  </div>
-
-  <div class="job">
-    <h3>Assistente de Suporte de TI · Ases Express</h3>
-    <p class="when">mar/2019 – ago/2020</p>
-    <p>Suporte a 100+ agências parceiras credenciadas. Monitoramento e processamento
-    automatizado de arquivos EDI entre matriz e agências.</p>
-  </div>
-
-  <h2>Stack</h2>
-  <ul class="stack">
-    <li>PHP</li><li>Python</li><li>JavaScript</li><li>React</li><li>Next.js</li>
-    <li>Laravel</li><li>MariaDB/MySQL</li><li>Linux</li><li>Docker</li><li>Proxmox</li>
-    <li>Active Directory</li><li>Power BI</li><li>Selenium</li><li>APIs REST</li>
-    <li>LLMs em produção</li>
-  </ul>
-
-  <h2>Formação</h2>
-  <p>Engenharia de Computação (cursando, 2023–2027) · Técnico em Manutenção de Computadores ·
-  Certificações em IA aplicada, cibersegurança, tuning de banco e cloud.</p>
+  <section>
+    <div class="lbl">Formação</div>
+    <div class="edu"><div class="when">2023 – 2027</div>
+      <div><b>Bacharelado em Engenharia de Computação</b><span>Descomplica Faculdade Digital · cursando</span></div></div>
+    <div class="edu"><div class="when">2022 – 2023</div>
+      <div><b>Técnico em Manutenção de Computadores e Celulares</b><span>Cebrac</span></div></div>
+    <div class="edu"><div class="when">2017 – 2018</div>
+      <div><b>Técnico em Hardware: Montagem e Manutenção</b><span>Cebrac</span></div></div>
+    <div class="lbl" style="margin-top:30px">Certificações</div>
+    <p class="certs">Tuning de Banco de Dados · IA Aplicada · CyberSecurity · Object-Oriented Developer ·
+      Arquitetura e Organização de Computadores · Governança Digital 4.0 · Internet das Coisas ·
+      Cloud Platform · Global Network · Local Area Network · Mobile Developer · Smart Data Structures</p>
+    <p class="certs" style="margin-top:14px"><b>Idiomas:</b> Português (nativo) · Inglês intermediário (EF English Live)</p>
+  </section>
 
   <footer>
-    Chapecó/SC · <a href="mailto:contato@cjsinfotech.com.br">contato@cjsinfotech.com.br</a> ·
-    <a href="https://github.com/cleysonjunior">github.com/cleysonjunior</a>
+    <span>Cleyson Júnior Studzinski · Chapecó/SC</span>
+    <span>cleyson.me</span>
   </footer>
 
 </div>
