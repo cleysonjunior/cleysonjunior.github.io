@@ -7,6 +7,8 @@
 <title>Cleyson Júnior Studzinski — Coordenador de TI</title>
 <meta name="description" content="Coordenador de TI com 7 anos de experiência em infraestrutura, automação e dados. Chapecó/SC — disponível para oportunidades remotas ou na região.">
 <link rel="canonical" href="https://cleyson.me/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:image" content="https://cleyson.me/foto.jpg">
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Cleyson Júnior Studzinski — Coordenador de TI">
 <meta property="og:description" content="Infraestrutura, automação (RPA) e dados. Lançamento de 2 minutos para 12 segundos. Deploy de estações de 2 horas para 30 minutos.">
@@ -63,6 +65,12 @@ section:first-of-type{border-top:0}
 .btn:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:var(--shadow)}
 .btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
 .btn.primary:hover{border-color:var(--accent)}
+
+.hero-g{display:grid;gap:34px;align-items:start}
+@media(min-width:820px){.hero-g{grid-template-columns:1fr 210px;gap:44px}}
+.retrato{width:170px;height:170px;border-radius:16px;object-fit:cover;
+  border:1px solid var(--line);box-shadow:var(--shadow);justify-self:start}
+@media(min-width:820px){.retrato{width:210px;height:210px;justify-self:end}}
 
 /* ── números ── */
 .nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:22px}
@@ -125,6 +133,8 @@ footer{border-top:1px solid var(--line);padding:30px 0 50px;
 <div class="wrap">
 
   <section class="hero">
+   <div class="hero-g">
+    <div>
     <span class="avail"><span class="dot"></span>Disponível para novas oportunidades</span>
     <h1>Cleyson Júnior Studzinski</h1>
     <p class="role">Coordenador de TI · Infraestrutura, automação e dados · Chapecó/SC — remoto ou região</p>
@@ -138,6 +148,10 @@ footer{border-top:1px solid var(--line);padding:30px 0 50px;
       <a class="btn" href="mailto:contato@cjsinfotech.com.br">contato@cjsinfotech.com.br</a>
       <a class="btn" href="https://www.cjsinfotech.com.br" target="_blank" rel="noopener">CJS Infotech ↗</a>
     </div>
+    </div>
+    <img class="retrato" src="foto.jpg" width="440" height="440"
+         alt="Cleyson Júnior Studzinski" loading="eager">
+   </div>
   </section>
 
   <section>
